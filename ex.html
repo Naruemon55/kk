@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+</head>
+
+<style>
+.d1 {
+    background-color: blueviolet;
+}
+.s1 {
+    background-color: chartreuse;
+}
+.d2 {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    padding: 20px;
+    border: 1 px solid green;
+}
+.d3 {
+    background-color: beige;
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    margin: 20 px;
+    padding: 5px;
+}
+.d4 {
+    background-color: rgb(237, 76, 2);
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    margin: 50 px;
+    padding: 5px;
+    box-shadow: 10px 5px 1px greenyellow;
+}
+.d5 {
+    overflow: hidden;
+    background-color: rgb(251, 228, 228);
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    margin: 50 px;
+    padding: 5px
+}
+
+.d6 {
+    overflow: visible;
+    overflow: hidden;
+    background-color: rgb(14, 254, 242);
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    margin: 50 px;
+    padding: 5px
+}
+.d7 {
+    overflow: clip;
+    overflow: hidden;
+    background-color: rgb(246, 25, 220);
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    margin: 50 px;
+    padding: 5px
+}
+.d8
+ {
+    overflow: scroll;
+    overflow: hidden;
+    background-color: rgb(131, 230, 25);
+    box-sizing: border-box;
+    width: 500px;
+    height: 500px;
+    margin: 50 px;
+    padding: 5px
+}
+</style>
+
+
+
+<body>
+    <h1>Box Model</h1>
+    <div class="d1">
+        This is a block element
+    </div>
+
+    <span class="s1">
+        This is an inline element
+    </span>
+    <hr>
+    <h1>Box Model</h1>
+    <div class="d2">
+        content-box
+    </div>
+    <div class="d3">
+        content-box
+    </div>
+    <div class="d4">
+        content-box
+    </div>
+
+    <h1>Box Model</h1>
+    <div style="overflow: hidden;" class="d5">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Necessitatibus officia natus voluptatem ex amet laudantium laboriosam delectus aliquam nemo possimus quas, 
+        eveniet vitae enim nesciunt magnam quaerat cumque fuga dicta aut culpa? Rem atque quia, delectus ipsa, 
+        eaque labore mollitia fugit totam aperiam harum ut magni quasi neque cumque error!
+    </div>
+
+    <div style="overflow:visible ;" class="d6">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Necessitatibus officia natus voluptatem ex amet laudantium laboriosam delectus aliquam nemo possimus quas, 
+        eveniet vitae enim nesciunt magnam quaerat cumque fuga dicta aut culpa? Rem atque quia, delectus ipsa, 
+        eaque labore mollitia fugit totam aperiam harum ut magni quasi neque cumque error!
+
+    </div>
+       
+
+    <div style="overflow: auto;" class="d7">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Necessitatibus officia natus voluptatem ex amet laudantium laboriosam delectus aliquam nemo possimus quas, 
+        eveniet vitae enim nesciunt magnam quaerat cumque fuga dicta aut culpa? Rem atque quia, delectus ipsa, 
+        eaque labore mollitia fugit totam aperiam harum ut magni quasi neque cumque error!
+    </div>
+        
+    
+
+    <div style="overflow: scroll;" class="d8">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        Necessitatibus officia natus voluptatem ex amet laudantium laboriosam delectus aliquam nemo possimus quas, 
+        eveniet vitae enim nesciunt magnam quaerat cumque fuga dicta aut culpa? Rem atque quia, delectus ipsa, 
+        eaque labore mollitia fugit totam aperiam harum ut magni quasi neque cumque error!
+    </div>
+
+</body>
+</html>
